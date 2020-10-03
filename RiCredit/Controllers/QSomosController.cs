@@ -8,7 +8,7 @@ namespace Ricredit.Controllers
 {
     public class QSomosController : Controller
     {
-        public IActionResult Index()
+        public IActionResult QSomos()
         {
             return View();
         }

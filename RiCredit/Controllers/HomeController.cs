@@ -15,9 +15,9 @@ namespace RiCredit.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult QSomos()
         {
-            ViewData["Message"] = "Your application description page.";
+            
 
             return View();
         }
