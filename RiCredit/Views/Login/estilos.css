@@ -25,7 +25,7 @@ body {
 
 	grid-template-areas: "header header header"
 						 "contenido contenido contenido"
-						 "widget-1 widget-2 sidebar"
+						 /*"widget-1 widget-2 sidebar"*/
 						 "footer footer footer";
 }
 
@@ -45,10 +45,9 @@ body {
 	grid-area: header;
 }
 
-.contenedor .navb {
+.contenedor .header .navb {
 	background:  #003366;
 	color: #fff;
-	grid-area: header;
 	text-align: right;
 }
 
@@ -62,4 +61,29 @@ body {
 
 .contenedor .contenido .buttonLogin{
 	float: right;
+}
+
+.contenedor .footer {
+	background: #003366;
+	color: #fff;
+	text-align: right;
+	grid-area: footer;
+}
+
+.contenedor .footer .pbx-number{
+	float: left;
+}
+
+.contenedor .footer .pbx-whatsap{
+	float: right;
+}
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 /*"widget-1 widget-1 widget-2"*/
+						 "footer footer footer";
+	}
 }
