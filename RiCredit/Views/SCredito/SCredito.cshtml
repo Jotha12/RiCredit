@@ -1,0 +1,137 @@
+﻿@model Ricredit.Models.SCredito
+
+@{
+    ViewData["Title"] = "Seguimiento a Credito";
+}
+
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link href="~/css/Principal.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <meta name="viewport" content="width=device-width" />
+
+        <link href="~/css/QSomos.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <center>
+        <h2> Seguimiento a Credito </h2>
+        </center>
+
+            <div class="menu">
+                <ul class="button">
+                    <li><a href=”#”>Inicio</a></li>
+                    <li><a href=”#”>Inicio de sesión</a></li>
+                    <li><a href=”#”>Quienes somos</a></li>
+                    <li><a href=”#”>Préstamos</a></li>
+                    <li><a href=”#”>Solicitud de Préstamos</a></li>
+                    <li><a href=”#”>Sucursales</a></li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="cuadro">
+
+
+                <div class="p-3 mb-2 bg-light text-dark">
+                   
+                    
+                    <div class="form-row">
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Primer_nombre" class="control-label">Primer nombre</label></h5>
+                            <input asp-for="Primer_nombre" placeholder="Ingrese nombre" class="form-control form-control-sm" />
+                            <span asp-validation-for="Primer_nombre" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Segundo_nombre" class="control-label">Segundo nombre</label></h5>
+                            <input asp-for="Segundo_nombre" placeholder="Ingrese nombre" class="form-control form-control-sm" />
+                            <span asp-validation-for="Segundo_nombre" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Primer_apellido" class="control-label">Primer apellido</label></h5>
+                            <input asp-for="Primer_apellido" placeholder="Ingrese apellido" class="form-control form-control-sm" />
+                            <span asp-validation-for="Primer_apellido" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Segundo_apellido" class="control-label">Segundo apellido</label></h5>
+                            <input asp-for="Segundo_apellido" placeholder="Ingrese apellido" class="form-control form-control-sm" />
+                            <span asp-validation-for="Segundo_apellido" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Dpi" class="control-label">Dpi</label></h5>
+                            <input asp-for="Dpi" placeholder="Ingrese dpi" class="form-control form-control-sm" />
+                            <span asp-validation-for="Dpi" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Fecha_nacimiento" class="control-label">Fecha de nacimiento</label></h5>
+
+                            <div class="form-group row">
+                                <div class="col-10">
+                                    <input asp-for="Fecha_nacimiento" class="form-control form-control-sm" type="date" value="2011-08-19" id="example-date-input">
+                                </div>
+                            </div>
+                            <span asp-validation-for="Fecha_nacimiento" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Telefono" class="control-label">Telefono</label></h5>
+                            <input asp-for="Telefono" placeholder="Ingrese telefono" class="form-control form-control-sm" />
+                            <span asp-validation-for="Telefono" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Correo_electronico" class="control-label">Correo Electronico</label></h5>
+                            <input asp-for="Correo_electronico" placeholder="ingrese Correo electronico" class="form-control form-control-sm" />
+                            <span asp-validation-for="Correo_electronico" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Cantidad_credito" class="control-label">Cantidad de credito</label></h5>
+                            <input asp-for="Cantidad_credito" placeholder="Ingrese cantidad de credito" class="form-control form-control-sm" />
+                            <span asp-validation-for="Cantidad_credito" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Cuotas" class="control-label">Cuotas</label></h5>
+                            <input asp-for="Cuotas" placeholder="Ingrese cuotas de pago" class="form-control form-control-sm" />
+                            <span asp-validation-for="Cuotas" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Ubicacion" class="control-label">ubicacion</label></h5>
+                            <input asp-for="Ubicacion" placeholder="Ingrese su ubicacion " class="form-control form-control-sm" />
+                            <span asp-validation-for="Ubicacion" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <h5><label asp-for="Ingresos" class="control-label">Ingresos adicionales</label></h5>
+                            <input asp-for="Ingresos" placeholder="Ingrese sus ingresos" class="form-control form-control-sm" />
+                            <span asp-validation-for="Ingresos" class="text-danger"></span>
+                        </div>
+                       <div class="form-group col-md-3">
+                        <div class="form-group">
+                            <br />
+                            <input type="submit" value="Save" class="btn btn-primary" />
+                            <input type="submit" value="Delete" class="btn btn-primary" />
+                            <input type="submit" value="Cancel" class="btn btn-primary" />
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+           
+
+            
